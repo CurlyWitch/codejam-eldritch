@@ -1,8 +1,8 @@
-import AncientsData from '/data/ancients.js'
-import Difficulties from '/data/difficulties.js'
-import GreenCards from '/data/mythicCards/green/index.js'
-import BrownCards from '/data/mythicCards/brown/index.js'
-import BlueCards from '/data/mythicCards/blue/index.js'
+import AncientsData from './data/ancients.js'
+import Difficulties from './data/difficulties.js'
+import GreenCards from './data/mythicCards/green/index.js'
+import BrownCards from './data/mythicCards/brown/index.js'
+import BlueCards from './data/mythicCards/blue/index.js'
 
 window.activeAncient = {}
 
@@ -102,7 +102,7 @@ function deckShuffle() {
 
     const deck = document.createElement("div");
     deck.classList.add("deck");
-    deck.style.backgroundImage = `url('/assets/mythicCardBackground.png')`;
+    deck.style.backgroundImage = `url('./assets/mythicCardBackground.png')`;
     deck.addEventListener('click', clickDeck); 
     deckContainer.appendChild(deck);
 
